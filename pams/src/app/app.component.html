@@ -1,0 +1,15 @@
+<h2>{{ title }}</h2>
+<hr>
+<main>
+  <!-- <button @deferLoad="tch-component">Load TCH</button> -->
+  @defer {
+     <TchComponent></TchComponent>
+  }
+  <hr />
+  <!-- <button @deferLoad="eft-component">Load TCH</button> -->
+  @defer {
+     <EftComponent></EftComponent>
+  }
+
+</main>
+<hr>
