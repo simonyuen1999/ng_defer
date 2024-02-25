@@ -13,5 +13,19 @@ import { EftComponent } from '../../../eft/src/eft/eft.component';
 export class AppComponent {
   title = 'PAMS Defer';
 
-  // components = [ TchComponent ];
+  bShowEft = false;
+  bShowTch = false;
+
+  showTCH() {
+    console.log('showTCH');
+    this.bShowTch = !this.bShowTch;
+  }
+
+  showEFT() {
+    console.log('showEFT');
+    this.bShowEft = !this.bShowEft;
+  }
+
+  // Test code for dynamically adding components
+  components = [ TchComponent, EftComponent ];
 }

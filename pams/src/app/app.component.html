@@ -1,13 +1,13 @@
 <h2>{{ title }}</h2>
 <hr>
 <main>
-  <!-- <button @deferLoad="tch-component">Load TCH</button> -->
-  @defer {
+  <button (click)="showTCH()">Load TCH</button>
+  @defer( when bShowTch ) {
      <TchComponent></TchComponent>
   }
   <hr />
-  <!-- <button @deferLoad="eft-component">Load TCH</button> -->
-  @defer {
+  <button (click)="showEFT()">Load EFT</button>
+  @defer( when bShowEft) {
      <EftComponent></EftComponent>
   }
 
