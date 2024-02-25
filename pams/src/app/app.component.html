@@ -1,15 +1,13 @@
 <h2>{{ title }}</h2>
 <hr>
-<main>
-  <button (click)="showTCH()">Load TCH</button>
+  <button (click)="showTCH()">Load TCH</button> &nbsp; &nbsp; 
+  <button (click)="showEFT()">Load EFT</button>
+
+  <!-- Remark: @defer only with static binded component -->
   @defer( when bShowTch ) {
      <TchComponent></TchComponent>
   }
-  <hr />
-  <button (click)="showEFT()">Load EFT</button>
   @defer( when bShowEft) {
      <EftComponent></EftComponent>
   }
-
-</main>
 <hr>

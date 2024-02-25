@@ -18,11 +18,21 @@ export class AppComponent {
 
   showTCH() {
     console.log('showTCH');
+    if (this.bShowTch) { 
+      document.querySelector('#tch-iframe')?.setAttribute('style', 'display: none');
+    } else {
+      document.querySelector('#tch-iframe')?.setAttribute('style', 'display: block');
+    }
     this.bShowTch = !this.bShowTch;
   }
 
   showEFT() {
     console.log('showEFT');
+    if (this.bShowEft) { 
+      document.querySelector('#eft-iframe')?.setAttribute('style', 'display: none');
+    } else {   
+      document.querySelector('#eft-iframe')?.setAttribute('style', 'display: block');
+    }
     this.bShowEft = !this.bShowEft;
   }
 
