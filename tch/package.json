@@ -4,8 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build:prod": "ng build --output-hashing=none --base-href /tch/",
+    "build:stats": "ng build --stats-json",
     "build": "ng build --output-hashing=none",
     "watch": "ng build --watch --configuration development",
+    "analyze": "webpack-bundle-analyzer dist/tch/stats.json",
     "test": "ng test"
   },
   "private": true,
